@@ -1,38 +1,120 @@
 .App {
   text-align: center;
+  justify-content: flex-start;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+select {
+  width: 14 0px; /* Adjust the width as needed */
+  height: 20px; /* Adjust the height as needed */
+  font-size: 13px;
+  font-weight: bold;
+  color: rgb(240, 139, 24);
+  border-radius: 500px;
+  padding-left: 10px;
+  cursor: pointer;
+   /* Adjust the7 padding as needed */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Increase the size of the select options */
+option {
+  cursor: pointer;
+  min-width: 20px; /* Adjust the min-width as needed */
+  padding: 5px; /* Adjust the padding as needed */
+  font-size: 13px;
+  color:black;
+  font-weight: bold;
+  
+  
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.controls {
+  margin: 0px;
+  justify-content: space-between;
+  padding: 20px;
+  display: flex ;
+  font-size: 20px;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: rgb(250, 246, 227);
+  border-radius: 5px;
+}
+.status{
+ 
+
+  display: flex;
+ align-items: center;
+
 }
 
-.App-link {
-  color: #61dafb;
+.board {
+  display: flex;
+  justify-content: space-around;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.lane {
+   padding: 10px;
+  margin: 10px;
 }
+.tickettitle{
+  text-align: left  ;
+  justify-content: flex-start;
+  padding: auto;
+  margin: auto;
+}
+
+.ticket {
+cursor: pointer;
+  padding: auto;
+  margin: auto;
+  transition: width 1s ease-in-out 2s
+   }
+
+   .ticket:hover {
+    transform: scale(1.1); /* Increase size on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adjust box shadow on hover */
+    
+  }
+  
+  .ticket p div {
+    font-size: 10px; /* Specify the default font size */
+    transition: font-size 0.1s ease-in-out; /* Apply a smooth transition to font size */
+  }
+  
+  .ticket:hover p div {
+    font-size: 10px; /* Increase font size on hover */
+  }
+   .feature{
+    margin-top: 20px;
+    padding: auto;
+   }
+   .user{
+    text-align: left;
+   }
+   .Feature{
+    text-align: left;
+    padding-right: 2px;
+   
+   }
+
+   .numberStyle
+   { font-size: 15px;
+     color: rgba(0,0,0,0.5);
+     
+     margin-top: 8px;
+     margin-left: 20px;
+
+   }
+   .statusName{
+    margin-top: 20px;
+    margin-left:10px;
+    color:rgba(9, 9, 9, 0.8);
+    
+
+   }
+   .dot{
+    margin-top: 2px;
+    align-items: center;
+    
+    opacity: 20%;
+   }
+
+/* Add more styling based on your design */
