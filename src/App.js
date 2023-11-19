@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Board from './Components/Board.js';
 import './App.css';
-import quicksell from 'C:/Users/chara/Downloads/React/quicksell/src/Components/quicksell.png';
+import Quicksell from './Components/quicksell.png';
 
 
 function App() {
@@ -58,7 +58,7 @@ function App() {
         <button onClick={() => handleButtonClick(selectedOption)}>
         </button>)}
         </div>
-        <img src={quicksell} alt="quicksell" width={50} height={50} />
+        <img src={Quicksell} alt="quicksell" width={50} height={50} />
         <select  onChange={(e) => setSortOrder(e.target.value)}>
           <option value="priority">Sort by Priority</option>
           <option value="title">Sort by Title</option>  
