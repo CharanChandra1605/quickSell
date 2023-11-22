@@ -4,22 +4,22 @@
 }
 
 select {
-  width: 14 0px; /* Adjust the width as needed */
-  height: 20px; /* Adjust the height as needed */
+  width: 14 0px; 
+  height: 20px; 
   font-size: 13px;
   font-weight: bold;
   color: rgb(240, 139, 24);
   border-radius: 500px;
   padding-left: 10px;
   cursor: pointer;
-   /* Adjust the7 padding as needed */
+   
 }
 
-/* Increase the size of the select options */
+
 option {
   cursor: pointer;
-  min-width: 20px; /* Adjust the min-width as needed */
-  padding: 5px; /* Adjust the padding as needed */
+  min-width: 20px;
+    padding: 5px; 
   font-size: 13px;
   color:black;
   font-weight: bold;
@@ -60,27 +60,35 @@ option {
   padding: auto;
   margin: auto;
 }
+@keyframes slide-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 
 .ticket {
 cursor: pointer;
   padding: auto;
   margin: auto;
-  transition: width 1s ease-in-out 2s
+ 
    }
 
    .ticket:hover {
-    transform: scale(1.1); /* Increase size on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adjust box shadow on hover */
+    transform: scale(1.1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     
   }
   
   .ticket p div {
-    font-size: 10px; /* Specify the default font size */
-    transition: font-size 0.1s ease-in-out; /* Apply a smooth transition to font size */
+    font-size: 10px; 
+    transition: font-size 0.1s ease-in-out; 
   }
-  
   .ticket:hover p div {
-    font-size: 10px; /* Increase font size on hover */
+    font-size: 10px;
   }
    .feature{
     margin-top: 20px;
