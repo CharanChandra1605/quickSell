@@ -64,7 +64,7 @@ function App() {
           <option value="title">Sort by Title</option>  
         </select>
       </div>
-      <Board  tickets={tickets} users={users} groupBy={groupBy} sortOrder={sortOrder} backgroundColor={getRandomColor()} />
+      <Board tickets={tickets} users={users} groupBy={groupBy} sortOrder={sortOrder} backgroundColor={getRandomColor()} />
     </div>
   );
 }

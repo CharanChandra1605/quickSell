@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   justify-content: flex-start;
+  animation: fadeIn 1s ease-in-out;
 }
 
 select {
@@ -36,6 +37,7 @@ option {
   align-items: center;
   background-color: rgb(250, 246, 227);
   border-radius: 5px;
+ 
 }
 .status{
  
@@ -44,15 +46,29 @@ option {
  align-items: center;
 
 }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
 
 .board {
   display: flex;
   justify-content: space-around;
+  
+  animation: fadeIn 1s ease-in-out;
+  
 }
 
 .lane {
    padding: 10px;
   margin: 10px;
+  
 }
 .tickettitle{
   text-align: left  ;
